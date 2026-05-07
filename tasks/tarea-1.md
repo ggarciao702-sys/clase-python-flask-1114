@@ -25,35 +25,12 @@ Para instalar dependencias y ejecutar el proyecto, sigue el `README.md`.
 ## Preguntas de reflexion tecnica
 
 1. Que problema concreto resuelve el entorno virtual en un proyecto Python?
-2.    Evita el "conflicto de dependencias".
-3.    Si un proyecto A necesita la versión 1.0 de una librería y el proyecto B necesita la 2.0,
-4.    el entorno virtual permite que ambos convivan en la misma máquina sin romperse entre sí.
-5.
-6. Que diferencia hay entre instalar `Flask` globalmente y hacerlo dentro de `.venv`?
-7.    Instalarlo globalmente ensucia tu sistema operativo y obliga a que todos tus proyectos usen la misma versión.
-8.    En .venv, Flask es "desechable" y específico para ese proyecto, facilitando que sea portable y limpio.
-9.
-10. Por que `requirements.txt` forma parte del proyecto y no de tu maquina personal?
-11.   Es el "manual de instrucciones" de las dependencias.
-12.   Se incluye en el proyecto para que cualquier otra persona (o un servidor en la nube)
-13.   pueda replicar exactamente tu entorno técnico con un solo comando.
-14.   
-15. Cuando ejecutas `python app.py`, que archivo actua como punto de entrada y por que?
-16.   El archivo que ejecutas (app.py) actúa como tal porque es el que instancia el objeto Flask
-17.   (app = Flask(__name__)) y arranca el servidor local que escucha las peticiones.
-18.   
-19. Que relacion hay entre la ruta `/`, la funcion `inicio()` y el archivo `templates/index.html`?
-20.  1. La relación:/ es la ruta (URL) que pide el usuario.
-     2. inicio() es la función que Flask ejecuta cuando alguien llega a esa ruta.
-     3. templates/index.html es el resultado visual que la función decide enviar de vuelta al navegador.
-21.
-22. Que evidencia te da la terminal de que el servidor arranco correctamente?
-23.   Verás una línea que dice algo como * Running on http://127.0.0.1:5000.
-24.   Eso indica que el proceso está activo y esperando conexiones en esa dirección IP y puerto.
-25. Si cambias el HTML y el navegador muestra otra cosa, que te demuestra eso sobre el flujo entre backend y frontend en este proyecto?
-26.    Demuestra que el servidor (backend) es el que sirve el contenido dinámicamente.
-27.    Si cambias el HTML y se refleja, confirmas que el backend está leyendo el
-28.    archivo actualizado y entregándolo correctamente al navegador (frontend) cada vez que refrescas.
+2. Que diferencia hay entre instalar `Flask` globalmente y hacerlo dentro de `.venv`?
+3. Por que `requirements.txt` forma parte del proyecto y no de tu maquina personal?
+4. Cuando ejecutas `python app.py`, que archivo actua como punto de entrada y por que?
+5. Que relacion hay entre la ruta `/`, la funcion `inicio()` y el archivo `templates/index.html`?
+6. Que evidencia te da la terminal de que el servidor arranco correctamente?
+7. Si cambias el HTML y el navegador muestra otra cosa, que te demuestra eso sobre el flujo entre backend y frontend en este proyecto?
 
 ## Entregable
 
