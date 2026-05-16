@@ -16,6 +16,9 @@ EVIDENCIA DE ENTREGA - TAREA 2 (DATOS DINÁMICOS EN FLASK)
    ![![![alt text](image-4.png)]]
 
 3. RESPUESTAS DE REFLEXIÓN TÉCNICA:
-   *     ¿Qué cambia en la plantilla? Los datos dejan de ser fijos en el código visual; el archivo se vuelve una estructura moldeable que renderiza contenidos variables según las instrucciones recibidas desde el servidor en Python.
-   *     ¿Qué ventaja tiene separar la lógica? Permite trabajar bajo el principio de separación de responsabilidades. Se puede modificar el diseño o maquetación del HTML sin alterar el procesamiento matemático o las consultas de datos en Python.
-   *     ¿Qué pasa si una variable no se envía? Jinja2 / Flask manejan el error de manera silenciosa en producción, omitiendo el renderizado del marcador de posición sin detener el servidor ni lanzar pantallas de error críticas.
+
+        ¿Qué cambia en la plantilla? Los datos dejan de ser fijos en el código visual; el archivo se vuelve una estructura moldeable que renderiza contenidos variables según las instrucciones recibidas desde el servidor en Python.
+
+        ¿Qué ventaja tiene separar la lógica? Permite trabajar bajo el principio de separación de responsabilidades. Se puede modificar el diseño o maquetación del HTML sin alterar el procesamiento matemático o las consultas de datos en Python.
+        
+        ¿Qué pasa si una variable no se envía? Jinja2 / Flask manejan el error de manera silenciosa en producción, omitiendo el renderizado del marcador de posición sin detener el servidor ni lanzar pantallas de error críticas.
